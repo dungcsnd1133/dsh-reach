@@ -1,0 +1,46 @@
+{
+  "name": "dsh-reach",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Read-only multi-platform reach for DeepSeek Harness: web search, GitHub, V2EX, YouTube, Bilibili, Xueqiu stock quotes and LinkedIn jobs through four tools, in the spirit of Agent Reach.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "THIRD_PARTY.md",
+    "test",
+    "UNSUPPORTED.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "agent-reach",
+    "web-search",
+    "read-only",
+    "dsh-plugin"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.2-rc.1"
+  },
+  "icon": "./icon.svg"
+}

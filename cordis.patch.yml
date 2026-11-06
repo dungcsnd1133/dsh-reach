@@ -1,0 +1,37 @@
+# dsh-reach — đọc đa nền tảng, chỉ đọc.
+#
+# Lấy cảm hứng và port hành vi từ Agent Reach (MIT,
+# https://github.com/Panniantong/Agent-Reach). Plugin này độc lập: không gọi
+# CLI `agent-reach`, không cần Python, không đọc ~/.agent-reach.
+#
+# Mọi kênh đều CHỈ ĐỌC: không đăng bài, không bình luận, không đăng nhập thay
+# người dùng, không lưu cookie hay mật khẩu.
+#
+# Một patch THAY THẾ toàn bộ `config` của dòng nó nhắm tới, nên profile nào
+# override dòng này phải khai lại đủ mọi khóa cần dùng.
+- insert:
+    - id: reach
+      name: 'dsh-reach'
+      config:
+        # Ngân sách mạng cho mỗi yêu cầu, mili giây.
+        timeoutMs: 30000
+        # Trần kích thước một phản hồi, byte.
+        maxResponseBytes: 5242880
+        # Số ký tự văn bản tối đa hiển thị cho mỗi kết quả. Đặt nhỏ để tiết
+        # kiệm context; nội dung đầy đủ vẫn nằm trong `raw` của phong bì.
+        textBudget: 1500
+        # Token GitHub để nâng hạn mức từ 60 lên 5000 lượt/giờ.
+        # Nên đặt qua biến môi trường thay vì ghi secret vào đây.
+        githubTokenEnv: GITHUB_TOKEN
+        # Các kênh dòng này mở. Bỏ một dòng để không đăng ký kênh đó; kênh bị
+        # tắt vẫn trả NEED_SETUP nếu bị gọi nhầm.
+        channels:
+          - web
+          - github
+          - v2ex
+          - youtube
+          - bilibili
+          - xueqiu
+          - linkedin
+          - reddit
+          - twitter

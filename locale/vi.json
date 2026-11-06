@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Reach — đọc đa nền tảng",
+    "description": "Đọc và tìm kiếm nội dung công khai trên web, GitHub, V2EX, YouTube và Bilibili qua ba công cụ chỉ-đọc: reach_search, reach_read, reach_channels."
+  },
+  "channel": {
+    "web": "Web",
+    "github": "GitHub",
+    "v2ex": "V2EX",
+    "youtube": "YouTube",
+    "bilibili": "Bilibili"
+  },
+  "action": {
+    "search": "tìm kiếm",
+    "read": "đọc",
+    "hot": "bài nổi bật",
+    "node": "theo node",
+    "user": "người dùng",
+    "subtitle": "phụ đề"
+  }
+}

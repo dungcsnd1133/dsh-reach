@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Reach — multi-platform reader",
+    "description": "Read and search public content on the web, GitHub, V2EX, YouTube and Bilibili through three read-only tools: reach_search, reach_read, reach_channels."
+  },
+  "channel": {
+    "web": "Web",
+    "github": "GitHub",
+    "v2ex": "V2EX",
+    "youtube": "YouTube",
+    "bilibili": "Bilibili"
+  },
+  "action": {
+    "search": "search",
+    "read": "read",
+    "hot": "hot topics",
+    "node": "by node",
+    "user": "user",
+    "subtitle": "subtitles"
+  }
+}

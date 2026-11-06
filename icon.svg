@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Reach">
+  <defs>
+    <linearGradient id="reachGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f8cff"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#reachGrad)"/>
+  <!-- Mắt: năng lực nhìn thấy internet -->
+  <path d="M12 32c6-9 13-13.5 20-13.5S46 23 52 32c-6 9-13 13.5-20 13.5S18 41 12 32z"
+        fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="6.2" fill="#ffffff"/>
+  <circle cx="32" cy="32" r="2.8" fill="#4f8cff"/>
+  <!-- Ba vệ tinh: đa nền tảng -->
+  <circle cx="52" cy="14" r="3.1" fill="#ffffff" opacity="0.92"/>
+  <circle cx="12" cy="50" r="2.6" fill="#ffffff" opacity="0.8"/>
+  <circle cx="54" cy="50" r="2.2" fill="#ffffff" opacity="0.68"/>
+</svg>
